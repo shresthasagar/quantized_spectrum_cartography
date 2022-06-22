@@ -1,16 +1,5 @@
 import torch.nn as nn
-import torch.nn.functional as F 
 import torch
-import numpy as np
-import torchvision
-import torchvision.transforms as transforms 
-import torch.optim as optim
-from tqdm import tqdm, trange
-
-from torch.utils.tensorboard import SummaryWriter
-from itertools import product
-from slf_dataset import SLFDataset
-import os
 
 LR = 0.001
 BATCH_SIZE = 20
@@ -20,7 +9,7 @@ ROOT = '/home/pari/Projects/Research/Tensor_CS/data_drive/'
 
 image_size = 51
 nc = 2
-ndf = 32
+ndf = 320
 ngpu = 1
 
 class Flatten(nn.Module):
