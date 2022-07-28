@@ -1,7 +1,7 @@
 function [X Sc Ctrue peaks] = generate_map(dB, K, R, shadow_sigma, Xc, structured_c, basis, separable)
     seed = sum(100*clock);
-    % s = RandStream('mt19937ar','Seed',seed,'NormalTransform','Polar');
-    s = 100;
+    s = RandStream('mt19937ar','Seed',seed,'NormalTransform','Polar');
+    % s = 100;
     indK = [1:K]';
     if nargin <7
         basis = 's'; 
